@@ -1,36 +1,64 @@
-# Anava ACAP Public Releases
+# ACAP Releases
 
-[![Latest Release](https://img.shields.io/github/v/release/AnavaAcap/acap-releases)](https://github.com/AnavaAcap/acap-releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/AnavaAcap/acap-releases/total)](https://github.com/AnavaAcap/acap-releases/releases)
+Official releases for Anava ACAP (AXIS Camera Application Platform) applications.
 
-AI-powered security camera analytics for Axis network cameras.
+## Latest Version: v0.9.178 🚨
 
-## 📦 Download Latest Release
+### Critical Update (2025-08-10)
 
-Visit [**Releases**](https://github.com/AnavaAcap/acap-releases/releases/latest) to download the latest version.
+**[⬇️ Download Anava Installer v0.9.178 for macOS](https://github.com/AnavaAcap/anava-infrastructure-deployer/releases/download/v0.9.178/Anava.Installer-0.9.178-universal.dmg)**
 
-### Available Builds
+This release fixes critical issues that affected production builds, including:
+- White screen issue in production builds
+- License activation with correct MAC addresses
+- All security vulnerabilities (0 remaining)
 
-- **ARMv7hf OS 12**: For newer Axis cameras (recommended)
-- **AArch64 OS 12**: For 64-bit Axis cameras
+### What's New in v0.9.178
 
-## 🚀 Installation
+#### 🐛 Bug Fixes
+- **Fixed white screen issue** - React app now mounts correctly in production
+- **Fixed license activation** - Uses actual camera MAC addresses
+- **Fixed Firebase imports** - All modules resolve correctly
 
-1. Download the appropriate `.eap` file for your camera architecture
-2. Upload to your Axis camera via AXIS Camera Management
-3. Configure the application in your camera's web interface
+#### 🔒 Security Updates
+- **Zero vulnerabilities** - Removed node-ssdp security issue
+- **Electron v37** - Latest version with all patches
+- **Enhanced CSP** - Better content security policy
 
-## 🆕 Latest Updates (v2.10.12)
+#### ✨ Features
+- Universal binary for Intel and Apple Silicon Macs
+- Automatic DevTools in production for debugging
+- Improved error handling and logging
 
-- ✅ **Stabilized test suite** - 204/204 tests passing consistently
-- ✅ **UI improvements** - Cleaner interface, removed floating tour buttons  
-- ✅ **CI/CD reliability** - 100% automated release pipeline
-- ✅ **Repository maintenance** - Streamlined development workflow
+### Installation
 
-## 🏢 Enterprise Support
+1. Download the installer from the link above (248MB)
+2. Open the DMG file
+3. Drag Anava Installer to your Applications folder
+4. Launch and follow the setup wizard
 
-For enterprise deployments and technical support, visit [anava.ai](https://anava.ai)
+### System Requirements
+
+- macOS 10.15 (Catalina) or later
+- 4GB RAM minimum
+- Internet connection
+- Google account for authentication
+
+### Supported Cameras
+
+- All Axis cameras with ACAP support
+- Firmware 9.80+ recommended
+- P-series, M-series, Q-series models
+
+### Previous Releases
+
+View all releases: [GitHub Releases](https://github.com/AnavaAcap/anava-infrastructure-deployer/releases)
+
+### Support
+
+- [Report Issues](https://github.com/AnavaAcap/anava-infrastructure-deployer/issues)
+- [Documentation](https://github.com/AnavaAcap/anava-infrastructure-deployer/wiki)
 
 ---
 
-*Automatically updated with each release*
+© 2025 Anava Inc. All rights reserved.
